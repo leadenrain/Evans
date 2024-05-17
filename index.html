@@ -16,19 +16,30 @@
 </head>
 
 <body class="page">
-    <div class="one">
+    <div class="one" id="home">
         <header class="header">
             <a class="logo">Evans<span class="colored">+</span>Clear</a>
             <nav class="header__menu">
                 <ul class="list header__menu-list">
-                    <li class="menu-item">about us</li>
-                    <li class="menu-item">services</li>
-                    <li class="menu-item">insights</li>
-                    <li class="menu-item">support</li>
-                    <li class="menu-item">contact</li>
+                    <li class="menu-item point header-point">
+                        <a class="link" href="#us">about us</a>
+                    </li>
+                    <li class="menu-item point header-point">
+                        <a class="link" href="#serv">services</a>
+                    </li>
+                    <li class="menu-item point header-point">
+                        <a class="link" href="#0">insights</a>
+                    </li>
+                    <li class="menu-item point header-point">
+                        <a class="link" href="#0">support</a>
+                    </li>
+                    <li class="menu-item point header-point">
+                        <a class="link" href="#contact">contact</a>
+                    </li>
                     <li class="menu-item bg"><img src="svg/search.svg" alt=""></li>
                 </ul>
             </nav>
+
         </header>
         <div class="hero">
             <div class="hero__txt">
@@ -43,22 +54,34 @@
         </div>
     </div>
     <main class="content">
-        <div class="logos">
-            <img class="logos__image" src="img/nvidia.png" alt="">
-            <img class="logos__image" src="img/asml.png" alt="">
-            <img class="logos__image" src="img/cisco.png" alt="">
-            <img class="logos__image" src="img/intel.png" alt="">
-            <img class="logos__image" src="img/ibm.png" alt="">
-            <img class="logos__image" src="img/infineon.png" alt="">
+        <div class="clients">
+            <div class="clients__logos-wrapper">
+                <ul class="clients__logos-set">
+                    <li><div class="clients__logo"><img class="logo-img" src="img/nvidia.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/asml.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/cisco.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/intel.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/ibm.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/infineon.png" alt=""></div></li>
+                </ul>
+                <ul class="clients__logos-set" aria-hidden="true">
+                    <li><div class="clients__logo"><img class="logo-img" src="img/nvidia.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/asml.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/cisco.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/intel.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/ibm.png" alt=""></div></li>
+                    <li><div class="clients__logo"><img class="logo-img" src="img/infineon.png" alt=""></div></li>
+                </ul>
+            </div>
         </div>
 
         <div class="usp">
             <ul class="usp__list list ">
-                <li class="usp__list-item"><a class="usp-item-link active" href="#0">about us</a></li>
-                <li class="usp__list-item"><a class="usp-item-link" href="#0">our team</a></li>
-                <li class="usp__list-item"><a class="usp-item-link" href="#0">our clients</a></li>
+                <li class="usp__list-item"><a class="usp-item-link link active" href="#0">about us</a></li>
+                <li class="usp__list-item"><a class="usp-item-link link" href="#team">our team</a></li>
+                <li class="usp__list-item"><a class="usp-item-link link" href="#0">our clients</a></li>
             </ul>
-            <div class="serve about">
+            <div class="serve about" id="us">
                 <div class="about__txt txt">
                     <h3 class="txt-title">those we serve</h3>
                     <p class="txt-description">Whether you're a startup breaking new ground or an established enterprise
@@ -72,10 +95,10 @@
                 <p class="about__number number grad1">2024</p>
             </div>
 
-            <div class="experts">
-                <div class="about experts__about">
-                    <p class="experts__number number grad3">8000</p>
-                    <div class="experts__txt txt">
+            <div class="team" id="team">
+                <div class="about team__about">
+                    <p class="team__number number grad3">8000</p>
+                    <div class="team__txt txt">
                         <h3 class="txt-title">our experts</h3>
                         <p class="txt-description">Our team of tech-savvy legal experts is committed to providing
                             tailored solutions that safeguard your interests, ensuring your success in the ever-evolving
@@ -121,35 +144,35 @@
             </div>
         </div>
 
-        <ul class="services list ">
+        <ul class="services list" id="serv">
             <li class="services__item">
                 <div class="service">
-                    <img class="service-img" src="/svg/notebook.svg">
-                    <h4 class="services-title">Remote it legal support</h4>
+                    <img class="service__img" src="/svg/notebook.svg" alt="">
+                    <h4 class="services__title">Remote it legal support</h4>
                 </div>
             </li>
             <li class="services__item">
                 <div class="service">
-                    <img class="service-img" src="/svg/hands.svg" alt=""> <!--прописать через use-->
-                    <h4 class="services-title">On-Site Legal Support</h4>
+                    <img class="service__img" src="/svg/hands.svg" alt="">
+                    <h4 class="services__title">On-Site Legal Support</h4>
                 </div>
             </li>
             <li class="services__item">
                 <div class="service">
-                    <img class="service-img" src="/svg/chip.svg" alt="">
-                    <h4 class="services-title">Legal infrastructural support</h4>
+                    <img class="service__img" src="/svg/chip.svg" alt="">
+                    <h4 class="services__title">Legal infrastructural support</h4>
                 </div>
             </li>
             <li class="services__item">
                 <div class="service">
-                    <img class="service-img" src="/svg/web.svg" alt="">
-                    <h4 class="services-title">Proactive monitoring</h4>
+                    <img class="service__img" src="/svg/wifi.svg" alt="">
+                    <h4 class="services__title">Proactive monitoring</h4>
                 </div>
             </li>
         </ul>
 
 
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="contact__text">
                 <h3 class="contact-title">Ready To Contact Us for Professional Legal Support?</h3>
                 <p class="contact-descripton">If you require assistance with legal matters, our experienced team is
@@ -164,11 +187,12 @@
 
                 <div class="form__inputs">
                     <label for="name" class="visually-hidden"></label>
-                    <input class="form-contact" type="text" placeholder="Your Name" id="name">
+                    <input class="form-contact input" type="text" placeholder="Your Name" id="name">
                     <label for="tel" class="visually-hidden"></label>
-                    <input class="form-contact" type="tel" placeholder="Your contact number" id="tel">
+                    <input class="form-contact input" type="tel" placeholder="Your contact number" id="tel">
                     <label for="message" class="visually-hidden"></label>
-                    <input class="form-text-area" type="text" placeholder="How can we help?" id="message">
+                    <textarea class="form-text-area input" type="text" placeholder="How can we help?"
+                        id="message"></textarea>
                     <div class="form__buttons">
                         <button class="button-request button">request callback</button>
                         <button class="button-send button">send</button>
@@ -177,78 +201,96 @@
             </form>
         </div>
 
-
         <div class="articles">
             <h3 class="articles__title">Tech legal Articles</h3>
             <ul class="articles__list">
                 <li class="articles__list-item">
-                    <article class="card-bg debate">
-                        <div class="card-txt">
-                            <div class="card-label"><span class="label-bg">IT Support</span></div>
-                            <h4 class="card-title">the great technology debate in 2024</h4>
-                            <div class="data"><span class="date">June 28, 2024</span><span class="time">2 Mins to
-                                    read</span></div>
-                        </div>
-                    </article>
-                </li>
-                <li class="articles__list-item">
-                    <article class="card-bg reasons">
-                        <div class="card-txt">
-                            <div class="card-label"><span class="label-bg">IT Support</span></div>
-                            <h4 class="card-title">5 reasons your firm needs tech support</h4>
-                            <div class="data"><span class="date">June 28, 2024</span><span class="time">2 Mins to
-                                    read</span></div>
-                        </div>
-                    </article>
-                </li>
-                <li class="articles__list-item">
-                    <article class="card-bg assets">
-                        <div class="card-txt">
-                            <div class="card-label"><span class="label-bg">IT Support</span></div>
-                            <h4 class="card-title">Tracing assets - what you need to know</h4>
-                            <div class="data">
-                                <span class="date">June 28, 2024</span><span class="time">2 Mins to read</span>
+                    <a class="link" href="#">
+                        <article class="card-bg debate">
+                            <div class="card-txt">
+                                <div class="card-label"><span class="label-bg">IT Support</span></div>
+                                <h4 class="card-title">the great technology debate in 2024</h4>
+                                <div class="data"><span class="date">June 28, 2024</span><span class="time">2 Mins to
+                                        read</span></div>
                             </div>
-                        </div>
-                    </article>
+                        </article>
+                    </a>
+                </li>
+                <li class="articles__list-item">
+                    <a class="link" href="#">
+                        <article class="card-bg reasons">
+                            <div class="card-txt">
+                                <div class="card-label"><span class="label-bg">IT Support</span></div>
+                                <h4 class="card-title">5 reasons your firm needs tech support</h4>
+                                <div class="data"><span class="date">June 28, 2024</span><span class="time">2 Mins to
+                                        read</span></div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="articles__list-item">
+                    <a class="link" href="#0">
+                        <article class="card-bg assets">
+                            <div class="card-txt">
+                                <div class="card-label"><span class="label-bg">IT Support</span></div>
+                                <h4 class="card-title">Tracing assets - what you need to know</h4>
+                                <div class="data">
+                                    <span class="date">June 28, 2024</span><span class="time">2 Mins to read</span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="articles__list-item">
+                    <a class="link" href="#">
+                        <article class="card-bg debate">
+                            <div class="card-txt">
+                                <div class="card-label"><span class="label-bg">IT Support</span></div>
+                                <h4 class="card-title">the great technology debate in 2024</h4>
+                                <div class="data"><span class="date">June 28, 2024</span><span class="time">2 Mins to
+                                        read</span></div>
+                            </div>
+                        </article>
+                    </a>
                 </li>
 
             </ul>
             <div class="carousel">
-                <button class="carousel__button left"><img src="/svg/left.svg" alt=""></button>
-                <button class="carousel__button rght"><img src="/svg/right.svg" alt=""></button>
+                <button class="carousel__button button left"><img src="/svg/left.svg" alt=""></button>
+                <button class="carousel__button button rght"><img src="/svg/right.svg" alt=""></button>
             </div>
         </div>
 
     </main>
-    <footer>
+    <footer class="footer">
 
         <div class="footer__">
+            <!-- придумать класс -->
             <a class="logo">Evans<span class="colored">+</span>Clear</a>
             <div class="footer__links">
                 <nav class="footer__menu">
                     <ul class="footer__menu-list">
-                        <li class="footer-list-item">Home</li>
-                        <li class="footer-list-item">About Us</li>
-                        <li class="footer-list-item">Blog</li>
-                        <li class="footer-list-item">Contacts</li>
+                        <li class="footer-list-item point footer-point"><a class="link" href="#home">Home</a></li>
+                        <li class="footer-list-item point footer-point"><a class="link" href="#us">About Us</a></li>
+                        <li class="footer-list-item point footer-point"><a class="link" href="#0">Blog</a></li>
+                        <li class="footer-list-item point footer-point"><a class="link" href="#0">Contacts</a></li>
                     </ul>
                 </nav>
                 <ul class="socials">
-                    <li><img src="/svg/fb.svg" alt=""></li>
-                    <li><img src="/svg/inst.svg" alt=""></li>
-                    <li><img src="/svg/twit.svg" alt=""></li>
-                    <li><img src="/svg/yt.svg" alt=""></li>
+                    <li><a class="link" href="https://www.facebook.com"><img src="/svg/fb.svg" alt=""></a></li>
+                    <li><a class="link" href="https://www.instagram.com/"><img src="/svg/inst.svg" alt=""></a></li>
+                    <li><a class="link" href="https://twitter.com/"><img src="/svg/twit.svg" alt=""></a></li>
+                    <li><a class="link" href="https://www.youtube.com/"><img src="/svg/yt.svg" alt=""></a></li>
                 </ul>
-                
+
             </div>
         </div>
 
         <div class="terms">
-            <a class="site" href="yauchusverstat.com">yauchusverstat.com</a>
+            <a class="link" href="yauchusverstat.com">yauchusverstat.com</a>
             <div class="docs">
-                <a class="privacy" href="">Privacy & Policy</a>
-                <a class="conditions" href="">Terms & Conditions</a>
+                <a class="link" href="">Privacy & Policy</a>
+                <a class="link" href="">Terms & Conditions</a>
             </div>
         </div>
 
