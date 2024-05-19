@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="274" height="276" fill="none">
+
+<path fill="url(#a)" d="M118.2 275.1V156.9H0v-37.8h118.2V.9H156v118.2h117.9v37.8H156v118.2h-37.8Z"/>
+<path fill="#000" d="M118.2 275.1h-.5v.5h.5v-.5Zm0-118.2h.5v-.5h-.5v.5ZM0 156.9h-.5v.5H0v-.5Zm0-37.8v-.5h-.5v.5H0Zm118.2 0v.5h.5v-.5h-.5Zm0-118.2V.4h-.5v.5h.5Zm37.8 0h.5V.4h-.5v.5Zm0 118.2h-.5v.5h.5v-.5Zm117.9 0h.5v-.5h-.5v.5Zm0 37.8v.5h.5v-.5h-.5Zm-117.9 0v-.5h-.5v.5h.5Zm0 118.2v.5h.5v-.5h-.5Zm-37.3 0V156.9h-1v118.2h1Zm-.5-118.7H0v1h118.2v-1Zm-117.7.5v-37.8h-1v37.8h1ZM0 119.6h118.2v-1H0v1Zm118.7-.5V.9h-1v118.2h1Zm-.5-117.7H156v-1h-37.8v1Zm37.3-.5v118.2h1V.9h-1Zm.5 118.7h117.9v-1H156v1Zm117.4-.5v37.8h1v-37.8h-1Zm.5 37.3H156v1h117.9v-1Zm-118.4.5v118.2h1V156.9h-1Zm.5 117.7h-37.8v1H156v-1Z" style="fill:#000;fill-opacity:1"/>
+<defs><linearGradient id="a" x1="137" x2="137" y1="-78" y2="597.029" gradientUnits="userSpaceOnUse">
+<stop stop-color="#25BBC5"/>
+<stop offset="1" stop-color="#25BBC5" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

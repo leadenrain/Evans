@@ -8,9 +8,7 @@
     <link rel="icon" href="img/add-plus.ico" sizes="any">
     <link rel="icon" href="svg/add-plus.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/add-plus.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -19,7 +17,7 @@
     <div class="one" id="home">
         <header class="header">
             <a class="logo">Evans<span class="colored">+</span>Clear</a>
-            <nav class="header__menu">
+            <nav class="header__menu animatedItem active">
                 <ul class="list header__menu-list">
                     <li class="menu-item point header-point">
                         <a class="link" href="#us">about us</a>
@@ -43,34 +41,74 @@
         </header>
         <div class="hero">
             <div class="hero__txt">
-                <h1 class="title grad1">Tech Legal Solutions: <span class="grad2">Navigating the Digital </span><span
-                        class="grad2">Frontier with Precision<span></h1>
-                <p class="">We are committed to empowering innovation and</p>
-                <p>ensuring legal compliance for a
-                    wide spectrum of</p>
-                <p>clients, serving as your trusted partner.</p>
+                <h1 class="hero__title grad1 animatedItem active">Tech Legal Solutions:
+                    <span class="grad2">Navigating the Digital </span>
+                    <span class="grad2">Frontier with Precision</span>
+                </h1>
+                <p class="hero__subtitle animatedItem active">We are committed to empowering innovation and
+                    ensuring legal compliance for a
+                    wide spectrum of
+                    clients, serving as your trusted partner.</p>
             </div>
-            <div><span class="plus grad1">+</span></div>
+            <div class="plus-wrapper">
+                <svg class="plus animatedItem active" xmlns="http://www.w3.org/2000/svg" width="274" height="276" fill="none">
+                    <path fill="url(#a)"
+                        d="M118.2 275.1V156.9H0v-37.8h118.2V.9H156v118.2h117.9v37.8H156v118.2h-37.8Z" />
+                    <path fill="#000"
+                        d="M118.2 275.1h-.5v.5h.5v-.5Zm0-118.2h.5v-.5h-.5v.5ZM0 156.9h-.5v.5H0v-.5Zm0-37.8v-.5h-.5v.5H0Zm118.2 0v.5h.5v-.5h-.5Zm0-118.2V.4h-.5v.5h.5Zm37.8 0h.5V.4h-.5v.5Zm0 118.2h-.5v.5h.5v-.5Zm117.9 0h.5v-.5h-.5v.5Zm0 37.8v.5h.5v-.5h-.5Zm-117.9 0v-.5h-.5v.5h.5Zm0 118.2v.5h.5v-.5h-.5Zm-37.3 0V156.9h-1v118.2h1Zm-.5-118.7H0v1h118.2v-1Zm-117.7.5v-37.8h-1v37.8h1ZM0 119.6h118.2v-1H0v1Zm118.7-.5V.9h-1v118.2h1Zm-.5-117.7H156v-1h-37.8v1Zm37.3-.5v118.2h1V.9h-1Zm.5 118.7h117.9v-1H156v1Zm117.4-.5v37.8h1v-37.8h-1Zm.5 37.3H156v1h117.9v-1Zm-118.4.5v118.2h1V156.9h-1Zm.5 117.7h-37.8v1H156v-1Z"
+                        style="fill:#000;fill-opacity:1" />
+                    <defs>
+                        <linearGradient id="a" x1="137" x2="137" y1="-78" y2="597.029" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#25BBC5" />
+                            <stop offset="1" stop-color="#25BBC5" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
         </div>
     </div>
     <main class="content">
         <div class="clients">
             <div class="clients__logos-wrapper">
                 <ul class="clients__logos-set">
-                    <li><div class="clients__logo"><img class="logo-img" src="img/nvidia.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/asml.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/cisco.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/intel.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/ibm.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/infineon.png" alt=""></div></li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/nvidia.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/asml.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/cisco.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/intel.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/ibm.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/infineon.png" alt=""></div>
+                    </li>
                 </ul>
                 <ul class="clients__logos-set" aria-hidden="true">
-                    <li><div class="clients__logo"><img class="logo-img" src="img/nvidia.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/asml.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/cisco.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/intel.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/ibm.png" alt=""></div></li>
-                    <li><div class="clients__logo"><img class="logo-img" src="img/infineon.png" alt=""></div></li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/nvidia.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/asml.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/cisco.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/intel.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/ibm.png" alt=""></div>
+                    </li>
+                    <li>
+                        <div class="clients__logo"><img class="logo-img" src="img/infineon.png" alt=""></div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -83,8 +121,9 @@
             </ul>
             <div class="serve about" id="us">
                 <div class="about__txt txt">
-                    <h3 class="txt-title">those we serve</h3>
-                    <p class="txt-description">Whether you're a startup breaking new ground or an established enterprise
+                    <h3 class="txt-title animatedItem active">those we serve</h3>
+                    <p class="txt-description animatedItem active">Whether you're a startup breaking new ground or an established
+                        enterprise
                         facing
                         digital challenges,
                         we're here to empower your innovation while ensuring full legal compliance. With a focus on
@@ -92,30 +131,32 @@
                         technology
                         law, providing tailored solutions that safeguard your interests.</p>
                 </div>
-                <p class="about__number number grad1">2024</p>
+                <p class="about__number number grad1 animatedItem active">2024</p>
             </div>
 
             <div class="team" id="team">
                 <div class="about team__about">
-                    <p class="team__number number grad3">8000</p>
+                    <p class="team__number number grad3 animatedItem">8000</p>
                     <div class="team__txt txt">
-                        <h3 class="txt-title">our experts</h3>
-                        <p class="txt-description">Our team of tech-savvy legal experts is committed to providing
+                        <h3 class="txt-title animatedItem">our experts</h3>
+                        <p class="txt-description animatedItem">Our team of tech-savvy legal experts is committed to providing
                             tailored solutions that safeguard your interests, ensuring your success in the ever-evolving
                             landscape of
                             technology law. We are committed to empowering innovation and ensuring legal compliance for
                             a wide spectrum of
                             clients, serving as your trusted partner in technology law.</p>
                         <ul class="list bullets__list">
-                            <li class="bullets-item">Innovators and startups navigating legal landscapes for
+                            <li class="bullets-item animatedItem">Innovators and startups navigating legal landscapes for
                                 groundbreaking tech ventures.</li>
-                            <li class="bullets-item">Established enterprises seeking legal expertise in adapting to
+                            <li class="bullets-item animatedItem">Established enterprises seeking legal expertise in adapting
+                                to
                                 digital
                                 challenges.</li>
-                            <li class="bullets-item">Tech industry leaders requiring tailored solutions for dynamic
+                            <li class="bullets-item animatedItem">Tech industry leaders requiring tailored solutions for
+                                dynamic
                                 legal
                                 compliance.</li>
-                            <li class="bullets-item">Diverse clients benefitting from our expertise in technology
+                            <li class="bullets-item animatedItem">Diverse clients benefitting from our expertise in technology
                                 law
                                 intricacies.</li>
                         </ul>
@@ -145,25 +186,25 @@
         </div>
 
         <ul class="services list" id="serv">
-            <li class="services__item">
+            <li class="services__item animatedItem active">
                 <div class="service">
                     <img class="service__img" src="/svg/notebook.svg" alt="">
                     <h4 class="services__title">Remote it legal support</h4>
                 </div>
             </li>
-            <li class="services__item">
+            <li class="services__item animatedItem active">
                 <div class="service">
                     <img class="service__img" src="/svg/hands.svg" alt="">
                     <h4 class="services__title">On-Site Legal Support</h4>
                 </div>
             </li>
-            <li class="services__item">
+            <li class="services__item animatedItem active">
                 <div class="service">
                     <img class="service__img" src="/svg/chip.svg" alt="">
                     <h4 class="services__title">Legal infrastructural support</h4>
                 </div>
             </li>
-            <li class="services__item">
+            <li class="services__item animatedItem active">
                 <div class="service">
                     <img class="service__img" src="/svg/wifi.svg" alt="">
                     <h4 class="services__title">Proactive monitoring</h4>
@@ -202,8 +243,8 @@
         </div>
 
         <div class="articles">
-            <h3 class="articles__title">Tech legal Articles</h3>
-            <ul class="articles__list">
+            <h3 class="articles__title animatedItem active">Tech legal Articles</h3>
+            <ul class="articles__list animatedItem active">
                 <li class="articles__list-item">
                     <a class="link" href="#">
                         <article class="card-bg debate">
@@ -277,10 +318,14 @@
                     </ul>
                 </nav>
                 <ul class="socials">
-                    <li><a class="link" href="https://www.facebook.com"><img src="/svg/fb.svg" alt=""></a></li>
-                    <li><a class="link" href="https://www.instagram.com/"><img src="/svg/inst.svg" alt=""></a></li>
-                    <li><a class="link" href="https://twitter.com/"><img src="/svg/twit.svg" alt=""></a></li>
-                    <li><a class="link" href="https://www.youtube.com/"><img src="/svg/yt.svg" alt=""></a></li>
+                    <li class="socials__link"><a class="link" href="https://www.facebook.com"><img src="/svg/fb.svg"
+                                alt=""></a></li>
+                    <li class="socials__link"><a class="link" href="https://www.instagram.com/"><img src="/svg/inst.svg"
+                                alt=""></a></li>
+                    <li class="socials__link"><a class="link" href="https://twitter.com/"><img src="/svg/twit.svg"
+                                alt=""></a></li>
+                    <li class="socials__link"><a class="link" href="https://www.youtube.com/"><img src="/svg/yt.svg"
+                                alt=""></a></li>
                 </ul>
 
             </div>

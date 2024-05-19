@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before {
     box-sizing: border-box;
@@ -35,10 +39,5 @@ ol {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     white-space: nowrap;
-  }
+}
 
-  .page {
-    font-family: "Manrope", sans-serif;
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(1, 1, 6, 1);
-    }
